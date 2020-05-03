@@ -14,11 +14,19 @@
  </div>
  <div id="columns">
  <div id="side">
+ 
+  <div id="cart">
+    <% if @cart %>
+     <%= render @cart %>
+     <% end %>
+     <%= render_if @cart && @cart.line_items.any?, @cart %>
+ </div>
+
  <ul>
- <li><a href="http://www....">Home</a></li>
- <li><a href="http://www..../faq">Questions</a></li>
- <li><a href="http://www..../news">News</a></li>
- <li><a href="http://www..../contact">Contact</a></li>
+ <li><a href="http://www....">Домівка</a></li>
+ <li><a href="http://www..../faq">Питання</a></li>
+ <li><a href="http://www..../news">Новини</a></li>
+ <li><a href="http://www..../contact">Зв'язатись з нами </a></li>
  </ul>
  </div>
  <div id="main">
