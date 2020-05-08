@@ -7,6 +7,12 @@
  <td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
 </tr>
 </table>
+<div class="actions">
 <%= button_to 'Очистити козину', cart, method: :delete,
 data: { confirm: 'Ви впевнені?' } %>
+<%= button_to 'Checkout', new_order_path,
+ method: :get,
+ class: "checkout"%>
+</div>
+
 <% end %>

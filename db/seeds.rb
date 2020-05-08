@@ -8,7 +8,15 @@
 Product.create!(title: 'Кіт',
     description:
         %{<p>
-            Добрий кік. Віком 2 роки. Віддаємо через причину переїзду
+            Nice cat
         </p>},
     image_url: 'cat.jpg',
+    price: 200.00)
+
+Product.create!(title: 'Папугай',
+    description:
+        %{<p>
+            Птица говорун
+        </p>},
+    image_url: 'popa.jpg',
     price: 200.00)
