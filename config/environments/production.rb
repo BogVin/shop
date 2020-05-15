@@ -73,7 +73,7 @@ Rails.application.configure do
         domain: "domain.of.sender.net",
         authentication: "plain",
         user_name: "spongebob69961@gmail.com",
-        password: '090807123dickMEN',
+        password: ENV['PASS_EMAIL'],
         enable_starttls_auto: true
       }
   end
