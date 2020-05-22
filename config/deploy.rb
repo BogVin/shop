@@ -1,11 +1,11 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.0"
 
-user = 'bogdan'
+user = 'BogVin'
 domain = 'depot.yourhost.com'
 
 set :application, "shop"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@bitbucket.org:BogVin/shop.git'"
 
 #set :rvm_type, :system
 #set :rvm_ruby_string, 'ruby-2.5.1'
