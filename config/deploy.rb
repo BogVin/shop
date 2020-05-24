@@ -5,13 +5,13 @@ user = 'BogVin'
 domain = 'depot.yourhost.com'
 
 set :application, "shop"
-set :repo_url, "git@bitbucket.org:BogVin/shop.git'"
+set :repo_url, "git@github.com:BogVin/shop.git"
 
 #set :rvm_type, :system
 #set :rvm_ruby_string, 'ruby-2.5.1'
 
-set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
-set :deploy_to, "/home/#{user}/deploy/#{fetch(:application)}"
+#set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
+set :deploy_to, "/home/#{user}/#{fetch(:application)}"
 
 
 # Default branch is :master
