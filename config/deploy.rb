@@ -13,9 +13,7 @@ set :repo_url, "git@bitbucket.org:BogVin/shop.git'"
 set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
 set :deploy_to, "/home/#{user}/deploy/#{fetch(:application)}"
 
-role :app, domain
-role :web, domain
-role :db, domain
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
