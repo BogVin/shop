@@ -1,0 +1,11 @@
+# pack-refs with: peeled fully-peeled sorted 
+c034baa7e8dbcca293e059b049238840c7007d21 refs/heads/dependabot/bundler/puma-4.3.5
+cdb45cdeccf081616cebe10d32d8f67d94d649cf refs/heads/dependabot/bundler/shop/releases/20200524123101/puma-4.3.5
+391863fdb58f2b8deba7d362154808d5e5a19125 refs/heads/dependabot/bundler/shop/shared/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/rake-13.0.1
+50dcde338518e9b133128eca28d623a01066cb69 refs/heads/master
+c034baa7e8dbcca293e059b049238840c7007d21 refs/pull/1/head
+f07748d80a0cbcea5fc7e20f88aae4f50350b7c0 refs/pull/1/merge
+391863fdb58f2b8deba7d362154808d5e5a19125 refs/pull/2/head
+2377922d1c50825c73dced9b7b7fef738176cc2d refs/pull/2/merge
+cdb45cdeccf081616cebe10d32d8f67d94d649cf refs/pull/3/head
+5c39480babcf55c04eb14eef2e00e71bb9ce8dd4 refs/pull/3/merge
