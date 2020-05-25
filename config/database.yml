@@ -26,6 +26,6 @@ production:
   reconnect: false
   database: depot_production
   pool: 5
-  username: user
+  username: bogdan
   password: 1234
   host: localhost
