@@ -1,5 +1,6 @@
 Rails.application.configure do
   config.hosts << "depot.yourhost.com"
+  config.hosts << "shop-123.herokuapp.com"
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
