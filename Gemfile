@@ -6,11 +6,12 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
-
+gem  'pg'
+gem 'rails_12factor', group: :production
 gem 'figaro'
-group :production do
-  gem 'mysql2', '~> 0.4.0'
-end
+#group :production do
+  #gem 'mysql2', '~> 0.4.0'
+#end
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets

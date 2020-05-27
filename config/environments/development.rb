@@ -1,7 +1,5 @@
 Rails.application.configure do
-  config.hosts << "depot.yourhost.com"
   # Settings specified here will take precedence over those in config/application.rb.
-  config.hosts << "shop-123.herokuapp.com"
   config.hosts << "shop-123.herokuapp.com"
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
