@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "/home/bogdan/shop/shop/shared/bundle"
+BUNDLE_FROZEN: "true"
+BUNDLE_JOBS: "4"
+BUNDLE_WITHOUT: "development:test"
