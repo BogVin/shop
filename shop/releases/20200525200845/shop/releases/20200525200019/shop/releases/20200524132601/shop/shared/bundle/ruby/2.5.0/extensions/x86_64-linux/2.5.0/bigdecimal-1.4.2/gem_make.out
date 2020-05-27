@@ -1,0 +1,16 @@
+current directory: /home/bogdan/shop/shop/shared/bundle/ruby/2.5.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200524-17213-e41mas.rb extconf.rb
+checking for Windows... no
+creating Makefile
+
+current directory: /home/bogdan/shop/shop/shared/bundle/ruby/2.5.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR=" clean
+
+current directory: /home/bogdan/shop/shop/shared/bundle/ruby/2.5.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR="
+compiling util.c
+linking shared-object bigdecimal/util.so
+
+current directory: /home/bogdan/shop/shop/shared/bundle/ruby/2.5.0/gems/bigdecimal-1.4.2/ext/bigdecimal/util
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 util.so ./.gem.20200524-17213-da6i4n/bigdecimal
