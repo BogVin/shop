@@ -6,19 +6,39 @@
 #
 default: &default
   adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: bog
+  password: 1234
+  host: localhost
 
 development:
   <<: *default
-  database: <%= ENV['POSTGRES_DB'] %>
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: depot_production
+  pool: 5
+  username: bog
+  password: 1234
+  host: localhost
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV['POSTGRES_TEST_DB'] %>
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: depot_production
+  pool: 5
+  username: bog
+  password: 1234
+  host: localhost
+
 
 production:
   adapter: postgresql
