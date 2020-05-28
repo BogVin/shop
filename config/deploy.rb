@@ -1,21 +1,22 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.14.0"
-
-user = 'bogdan'
-domain = 'depot.yourhost.com'
-
 set :application, "shop"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:BogVin/shop.git"
 
+# Deploy to the user's home directory
+set :deploy_to, "/home/bogdan/shop/#{fetch :application}"
+
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+
+# Only keep the last 5 releases to save disk space
+set :keep_releases, 5
+set :passenger_restart_with_touch, true
 #set :rvm_type, :system
 #set :rvm_ruby_string, 'ruby-2.5.1'
 
-set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
-set :deploy_to, "/home/#{user}/deploy/#{fetch(:application)}"
+#set :repo_url, "#{user}@#{domain}:git/#{fetch(:application)}.git"
 
-role :app, domain
-role :web, domain
-role :db, domain
+
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
